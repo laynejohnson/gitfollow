@@ -23,35 +23,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func createSearchNavigationController() -> UINavigationController {
-        
-        // Initialize search view controller.
         let searchVC = SearchVC()
-        
-        // Tab/navigation bar configured inside view controller.
         searchVC.title = "Search"
-        
-        // Configure custom tab bar assets here. Icon placement indicated with array index.
         searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         
-        // Return navigation controller.
         return UINavigationController(rootViewController: searchVC)
     }
     
     func createFavoritesNavigationController() -> UINavigationController {
-        
-        // Initialize favorites list view controller.
         let favoritesVC = FavoritesListVC()
-        
-        // Configure tab/navigation controllers.
         favoritesVC.title = "Favorites"
         favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         
-        // Return navigation controller.
         return UINavigationController(rootViewController: favoritesVC)
     }
     
     func createTabBar() -> UITabBarController {
-        
         let tabBar = UITabBarController()
         UITabBar.appearance().tintColor = .systemIndigo
         tabBar.viewControllers = [createSearchNavigationController(), createFavoritesNavigationController()]
