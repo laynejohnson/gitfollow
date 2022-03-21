@@ -13,19 +13,62 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        // Underscore --> var name.
         guard let windowScene = (scene as? UIWindowScene) else { return }
-  
+        
+        // Search navigation controller.
         let searchNC = UINavigationController(rootViewController: SearchVC())
+        
+        // Favorites navigation controller.
         let favoritesNC = UINavigationController(rootViewController: FavoritesListVC())
         
+        // UITabBarController (navigation controller) holds an array of view controllers.
         let tabbar = UITabBarController()
         tabbar.viewControllers = [searchNC, favoritesNC]
         
+        // Initialize UIWindow. Fullscreen frame.
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        
+        // Configure window. Each window has a window scene.
         window?.windowScene = windowScene
+        
+        // Set root view controller.
         window?.rootViewController = tabbar
+        
+        // Make window visible.
         window?.makeKeyAndVisible()
+    }
+    
+    func createSearchNavigationController() -> UINavigationController {
+        
+        // Initialize search view controller.
+        let searchVC = SearchVC()
+        
+        // Tab/navigation bar configured inside view controller.
+        searchVC.title = "Search"
+        
+        // Configure custom tab bar assets here. Icon placement indicated with array index.
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        
+        // Return navigation controller.
+        return UINavigationController(rootViewController: searchVC)
+    }
+    
+    func createFavoritesNavigationController() -> UINavigationController {
+        
+        // Initialize favorites list view controller.
+        let favoritesVC = FavoritesListVC()
+        
+        // Configure tab/navigation controllers.
+        favoritesVC.title = "Favorites"
+        favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        
+        // Return navigation controller.
+        return UINavigationController(rootViewController: favoritesVC)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -85,7 +128,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
      window?.windowScene = windowScene
      
      // Set root view controller.
-     window?.rootViewController = UITabBarController()
+     window?.rootViewController = tabbar
      
      // Make window visible.
      window?.makeKeyAndVisible()
