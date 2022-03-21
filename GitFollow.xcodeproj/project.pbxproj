@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E8998AE827E88E6800982501 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8998AE727E88E6800982501 /* SearchVC.swift */; };
 		E8998AEA27E88EB100982501 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8998AE927E88EB100982501 /* FavoritesListVC.swift */; };
+		E8998AEC27E8B89200982501 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8998AEB27E8B89200982501 /* GFButton.swift */; };
 		E8F2D3EB27D902210068460E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2D3EA27D902210068460E /* AppDelegate.swift */; };
 		E8F2D3ED27D902210068460E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2D3EC27D902210068460E /* SceneDelegate.swift */; };
 		E8F2D3F427D902220068460E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2D3F327D902220068460E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		E8998AE727E88E6800982501 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		E8998AE927E88EB100982501 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		E8998AEB27E8B89200982501 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		E8F2D3E727D902200068460E /* GitFollow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitFollow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F2D3EA27D902210068460E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F2D3EC27D902210068460E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8998AED27E8C8DB00982501 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				E8998AEB27E8B89200982501 /* GFButton.swift */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
 		E8F2D3DE27D902200068460E = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		E8F2D3E927D902210068460E /* GitFollow */ = {
 			isa = PBXGroup;
 			children = (
+				E8998AED27E8C8DB00982501 /* UI Elements */,
 				E8F2D40127D905F80068460E /* App */,
 				E8F2D3FE27D905DD0068460E /* Models */,
 				E8F2D3FF27D905E70068460E /* Views */,
@@ -170,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8998AEA27E88EB100982501 /* FavoritesListVC.swift in Sources */,
+				E8998AEC27E8B89200982501 /* GFButton.swift in Sources */,
 				E8998AE827E88E6800982501 /* SearchVC.swift in Sources */,
 				E8F2D3EB27D902210068460E /* AppDelegate.swift in Sources */,
 				E8F2D3ED27D902210068460E /* SceneDelegate.swift in Sources */,
