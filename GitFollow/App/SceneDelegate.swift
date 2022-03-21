@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         // Set root view controller.
-        window?.rootViewController = ViewController()
+        window?.rootViewController = UITabBarController()
         
         // Make window visible.
         window?.makeKeyAndVisible()
