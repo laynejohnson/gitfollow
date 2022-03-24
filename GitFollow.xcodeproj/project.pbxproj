@@ -15,6 +15,7 @@
 		E8B867CD27EC9B0900F97318 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B867CC27EC9B0900F97318 /* FollowerListVC.swift */; };
 		E8B867CF27EC9FFC00F97318 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B867CE27EC9FFC00F97318 /* Extensions.swift */; };
 		E8B867D127ECA1AA00F97318 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B867D027ECA1AA00F97318 /* GFTitleLabel.swift */; };
+		E8B867D327ECA38E00F97318 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B867D227ECA38E00F97318 /* GFBodyLabel.swift */; };
 		E8F2D3EB27D902210068460E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2D3EA27D902210068460E /* AppDelegate.swift */; };
 		E8F2D3ED27D902210068460E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2D3EC27D902210068460E /* SceneDelegate.swift */; };
 		E8F2D3F427D902220068460E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2D3F327D902220068460E /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		E8B867CC27EC9B0900F97318 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		E8B867CE27EC9FFC00F97318 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E8B867D027ECA1AA00F97318 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		E8B867D227ECA38E00F97318 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		E8F2D3E727D902200068460E /* GitFollow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitFollow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F2D3EA27D902210068460E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F2D3EC27D902210068460E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				E8998AEB27E8B89200982501 /* GFButton.swift */,
 				E8998AEE27E8D6EC00982501 /* GFTextField.swift */,
 				E8B867D027ECA1AA00F97318 /* GFTitleLabel.swift */,
+				E8B867D227ECA38E00F97318 /* GFBodyLabel.swift */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				E8998AEC27E8B89200982501 /* GFButton.swift in Sources */,
 				E8998AE827E88E6800982501 /* SearchVC.swift in Sources */,
 				E8998AF127E8DB0600982501 /* Constants.swift in Sources */,
+				E8B867D327ECA38E00F97318 /* GFBodyLabel.swift in Sources */,
 				E8F2D3EB27D902210068460E /* AppDelegate.swift in Sources */,
 				E8B867CD27EC9B0900F97318 /* FollowerListVC.swift in Sources */,
 				E8B867D127ECA1AA00F97318 /* GFTitleLabel.swift in Sources */,
