@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  String+Ext.swift
 //  GitFollow
 //
 //  Created by Layne Johnson on 3/24/22.

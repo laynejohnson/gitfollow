@@ -37,6 +37,8 @@ class GFAlertVC: UIViewController {
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
         configureContainerView()
         configureTitleLabel()
+        configureActionButton()
+        configureMessageLabel()
     }
     
     func configureContainerView() {
@@ -80,11 +82,18 @@ class GFAlertVC: UIViewController {
         ])
     }
     
-    func configureBodyLabel() {
+    func configureMessageLabel() {
         containerView.addSubview(messageLabel)
         messageLabel.text = message ?? "Unable to complete request."
         // Configure number of lines at call site.
         messageLabel.numberOfLines = 4
+        
+        NSLayoutConstraint.activate([
+            messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
+        ])
     }
     
     @objc func dismissVC() {
