@@ -57,15 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E8998AED27E8C8DB00982501 /* UI Elements */ = {
+		E8998AED27E8C8DB00982501 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8B867DB27ECC9CA00F97318 /* View Controllers */,
 				E8998AEB27E8B89200982501 /* GFButton.swift */,
 				E8998AEE27E8D6EC00982501 /* GFTextField.swift */,
 				E8B867D027ECA1AA00F97318 /* GFTitleLabel.swift */,
 				E8B867D227ECA38E00F97318 /* GFBodyLabel.swift */,
 			);
-			path = "UI Elements";
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		E8B867D627ECBE2D00F97318 /* Extensions */ = {
@@ -75,6 +76,14 @@
 				E8B867D727ECBE7000F97318 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8B867DB27ECC9CA00F97318 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8B867D427ECA62900F97318 /* GFAlertVC.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		E8F2D3DE27D902200068460E = {
@@ -97,11 +106,11 @@
 		E8F2D3E927D902210068460E /* GitFollow */ = {
 			isa = PBXGroup;
 			children = (
-				E8998AED27E8C8DB00982501 /* UI Elements */,
-				E8F2D40127D905F80068460E /* App */,
 				E8F2D3FE27D905DD0068460E /* Models */,
-				E8F2D3FF27D905E70068460E /* Views */,
-				E8F2D40027D905EC0068460E /* Controllers */,
+				E8998AED27E8C8DB00982501 /* Custom Views */,
+				E8F2D40027D905EC0068460E /* Screens (Controllers) */,
+				E8B867D627ECBE2D00F97318 /* Extensions */,
+				E8F2D40127D905F80068460E /* App Support */,
 				E8F2D3F327D902220068460E /* Assets.xcassets */,
 				E8F2D3F827D902220068460E /* Info.plist */,
 			);
@@ -115,34 +124,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E8F2D3FF27D905E70068460E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E8F2D3F527D902220068460E /* LaunchScreen.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		E8F2D40027D905EC0068460E /* Controllers */ = {
+		E8F2D40027D905EC0068460E /* Screens (Controllers) */ = {
 			isa = PBXGroup;
 			children = (
 				E8998AE727E88E6800982501 /* SearchVC.swift */,
 				E8998AE927E88EB100982501 /* FavoritesListVC.swift */,
 				E8B867CC27EC9B0900F97318 /* FollowerListVC.swift */,
-				E8B867D427ECA62900F97318 /* GFAlertVC.swift */,
 			);
-			path = Controllers;
+			path = "Screens (Controllers)";
 			sourceTree = "<group>";
 		};
-		E8F2D40127D905F80068460E /* App */ = {
+		E8F2D40127D905F80068460E /* App Support */ = {
 			isa = PBXGroup;
 			children = (
-				E8B867D627ECBE2D00F97318 /* Extensions */,
 				E8F2D3EA27D902210068460E /* AppDelegate.swift */,
 				E8F2D3EC27D902210068460E /* SceneDelegate.swift */,
+				E8F2D3F527D902220068460E /* LaunchScreen.storyboard */,
 				E8998AF027E8DB0600982501 /* Constants.swift */,
 			);
-			path = App;
+			path = "App Support";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
