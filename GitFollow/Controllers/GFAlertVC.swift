@@ -33,6 +33,7 @@ class GFAlertVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
+        configureContainerView()
     }
     
     func configureContainerView() {
@@ -42,5 +43,12 @@ class GFAlertVC: UIViewController {
         containerView.layer.borderWidth = 2
         containerView.layer.borderColor = UIColor.white.cgColor
         containerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            containerView.heightAnchor.constraint(equalToConstant: 280),
+            containerView.widthAnchor.constraint(equalToConstant: 220)
+        ])
     }
 }
