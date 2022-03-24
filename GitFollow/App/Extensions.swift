@@ -8,6 +8,14 @@
 import Foundation
 
 extension String {
+    
+     // TODO: Add GitHub username validation.
+    /*
+     - Alphanumeric
+     - Can include -
+     - No consecutive -
+     - Cannot start or end with -
+     */
 
     var isValidEmail: Bool {
         let emailFormat         = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
