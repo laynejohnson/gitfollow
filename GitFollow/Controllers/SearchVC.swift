@@ -40,7 +40,7 @@ class SearchVC: UIViewController {
         
         // Text validation.
         guard isUsernameEntered else {
-            print("No username entered.")
+            presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a GitHub username 👀.", buttonTitle: "Ok")
             return
         }
         
