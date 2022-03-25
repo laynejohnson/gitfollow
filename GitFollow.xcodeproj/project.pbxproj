@@ -107,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				E8F2D3FE27D905DD0068460E /* Models */,
-				E8998AED27E8C8DB00982501 /* Custom Views */,
 				E8F2D40027D905EC0068460E /* Screens (Controllers) */,
+				E8998AED27E8C8DB00982501 /* Custom Views */,
 				E8B867D627ECBE2D00F97318 /* Extensions */,
 				E8F2D40127D905F80068460E /* App Support */,
 				E8F2D3F327D902220068460E /* Assets.xcassets */,
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				E8998AE727E88E6800982501 /* SearchVC.swift */,
-				E8998AE927E88EB100982501 /* FavoritesListVC.swift */,
 				E8B867CC27EC9B0900F97318 /* FollowerListVC.swift */,
+				E8998AE927E88EB100982501 /* FavoritesListVC.swift */,
 			);
 			path = "Screens (Controllers)";
 			sourceTree = "<group>";

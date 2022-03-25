@@ -27,7 +27,6 @@ class SearchVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         navigationController?.isNavigationBarHidden = true
     }
     
@@ -44,7 +43,7 @@ class SearchVC: UIViewController {
             return
         }
         
-        // Configure view controller.
+        // Configure view controller. Pass username data to FollowerListVC.
         let followerListVC = FollowerListVC()
         followerListVC.username = usernameTextField.text
         followerListVC.title = usernameTextField.text
